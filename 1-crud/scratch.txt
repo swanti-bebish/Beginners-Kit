@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <?php 
+      while($row = $result->fetch_assoc()) {
+    ?>
+      <tr>
+        <td><?php echo $row["id"] ?></td>
+        <td><?php echo $row["full_name"] ?></td>
+        <td><?php echo $row["username"] ?></td>
+      </tr>
+    <?php
+      }
+    ?>
+  </tbody>
+</table>
